@@ -47,6 +47,7 @@ void loop() {
     // Ambos motores adelante
     analogWrite(IN1, 0);
     analogWrite(IN2, velocidad);
+    
     analogWrite(IN3, 0);
     analogWrite(IN4, velocidad);
   } 
@@ -57,8 +58,10 @@ void loop() {
     // Motor B atrás
     analogWrite(IN3, 0);
     analogWrite(IN4, velocidad);
+    
     analogWrite(IN1, velocidad);
     analogWrite(IN2, 0);
+    
     analogWrite(IN3, 0);
     analogWrite(IN4, velocidad);
   }
