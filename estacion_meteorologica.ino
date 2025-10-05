@@ -13,13 +13,13 @@ unsigned long channelID = 3092103;
 const char* writeAPIKey = "I6R0FFDE8N84HS78";
 
 // ===== OBJETOS =====
-ESP8266WebServer server(80);    // Si es ESP32: WebServer server(80);
+ESP8266WebServer server(80);
 
 #define DHTPIN 2      // Pin donde conectaste el DHT22
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-Adafruit_BMP280 bmp;  // I2C
+Adafruit_BMP280 bmp;  // Protocolo I2C
 
 WiFiClient client;
 
@@ -52,7 +52,6 @@ void setup() {
 
   ThingSpeak.begin(client);
 
-
   // Rutas
   server.on("/", handleRoot);
   server.on("/data", handleData);
@@ -83,7 +82,7 @@ void loop() {
     }
   }
 
-  delay(20000); // ThingSpeak permite cada 15s mínimo, mejor 20s
+  delay(20000);
 }
 
 // ===== HTML principal con Chart.js =====
