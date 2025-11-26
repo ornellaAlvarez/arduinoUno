@@ -7,8 +7,8 @@
 // CONFIGURACIÓN
 const char* ssid = "TU_WIFI";
 const char* password = "TU_CONTRASEÑA";
-#define BOT_TOKEN "TU_TELEGRAM_BOT_TOKEN"
-#define CHAT_ID "TU_CHAT_ID"
+#define BOT_TOKEN "7947545042:AAFNE-uWWvxOTiDC5CJOrQap-2GeM3H2UN0"
+#define CHAT_ID "7145471122"
 
 #define TRIG_PIN D5
 #define ECHO_PIN D6
